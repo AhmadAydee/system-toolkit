@@ -1,3 +1,4 @@
+import urllib.request
 import os
 import platform
 import shutil
@@ -55,7 +56,20 @@ def main():
     print("Diagnostics completed.")
     print("=" * 40)
 
+def check_internet():
+    print("\n[9] Internet Connectivity")
+
+    url = "https://pypi.org"
+
+    try:
+        with urllib.request.urlopen(url, timeout=10) as response:
+            print(f"Connection successful: HTTP {response.status}")
+
+    except Exception as error:
+        print(f"Connection failed: {error}")
+
 
 if __name__ == "__main__":
     main()
+    check_internet()
 
