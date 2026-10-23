@@ -20,7 +20,7 @@ def get_command_output(command):
 
 def main():
     print("=" * 40)
-    print("       SYSTEM DIAGNOSTICS TOOL")
+    print("       SYSTEM DIAGNOSTICS TOOL v1.1")
     print("=" * 40)
 
     print("\n[1] Date and Time")
