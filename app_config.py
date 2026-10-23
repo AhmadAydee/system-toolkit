@@ -1,2 +1,2 @@
-APP_NAME = "System Diagnostics"
+APP_NAME = "Android Toolkit"
 APP_VERSION = "1.0"
